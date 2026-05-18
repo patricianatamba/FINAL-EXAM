@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredient Details | SafeSkincareUG</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Detailed breakdown of skincare ingredients, their safety ratings, benefits, and side effects.">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C12 22 20 18 20 12V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                SafeSkincareUG
+            </a>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ingredients.html" class="active">Ingredients Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Sample Ingredient 1: Safe -->
+        <div class="details-header">
+            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80" alt="Shea Butter" class="details-img">
+            <div class="details-info">
+                <h1>Shea Butter</h1>
+                <p class="local-name">Local Name: Muzigo gw'ebititi</p>
+                <div class="safety-status bg-safe">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Safety Status: Safe
+                </div>
+                <p style="color: #555; margin-bottom: 2rem; font-size: 1.1rem;">
+                    Shea butter is a fat extracted from the nut of the African shea tree. It is widely used in cosmetics as a moisturizer, salve or lotion. It absorbs rapidly into the skin without leaving a greasy residue and is known for its incredible healing properties.
+                </p>
+                
+                <div class="details-grid">
+                    <div class="info-card">
+                        <h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                            Benefits
+                        </h3>
+                        <ul>
+                            <li>Deeply moisturizes dry skin</li>
+                            <li>Reduces skin inflammation</li>
+                            <li>Provides anti-aging properties</li>
+                            <li>Restores skin elasticity</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--warning-color)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                            Potential Side Effects
+                        </h3>
+                        <ul>
+                            <li>Extremely rare allergic reactions</li>
+                            <li>Can be comedogenic for some very acne-prone skin types if used in heavy amounts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border: 0; height: 1px; background: #e1e4e8; margin: 4rem 0;">
+
+        <!-- Sample Ingredient 2: Avoid -->
+        <div class="details-header">
+            <div class="details-info">
+                <h1>Hydroquinone</h1>
+                <p class="local-name">Local Name: Kola-bbala</p>
+                <div class="safety-status bg-avoid">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    Safety Status: Avoid
+                </div>
+                <p style="color: #555; margin-bottom: 2rem; font-size: 1.1rem;">
+                    Hydroquinone is a chemical skin-lightening agent used to bleach the skin. It decreases the formation of melanin in the skin. While sometimes prescribed medically for severe hyperpigmentation, its widespread unregulated use in cosmetic bleaching creams is highly dangerous and illegal in many countries including Uganda.
+                </p>
+                
+                <div class="details-grid">
+                    <div class="info-card">
+                        <h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--danger-color)" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                            Why to Avoid
+                        </h3>
+                        <ul>
+                            <li>Causes severe skin thinning</li>
+                            <li>Can result in Ochronosis (blue-black discoloration of the skin)</li>
+                            <li>Increases risk of skin cancer due to UV sensitivity</li>
+                            <li>Damages the skin's natural protective barrier</li>
+                        </ul>
+                    </div>
+                    <div class="info-card" style="background-color: var(--pastel-accent);">
+                        <h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Safe Alternatives
+                        </h3>
+                        <ul>
+                            <li>Vitamin C (Vitayimini C)</li>
+                            <li>Turmeric (Ebizigo by'ekinzaali)</li>
+                            <li>Niacinamide</li>
+                            <li>Licorice Root Extract</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?auto=format&fit=crop&w=800&q=80" alt="Chemicals/Hydroquinone" class="details-img">
+        </div>
+        
+        <div style="text-align: center; margin-top: 4rem;">
+            <a href="ingredients.html" class="btn">Back to Directory</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SafeSkincareUG. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Empowering Ugandans with skincare knowledge.</p>
+    </footer>
+</body>
+</html>
 
