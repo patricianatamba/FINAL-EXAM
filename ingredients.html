@@ -1,1 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredients Directory | SafeSkincareUG</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Browse our comprehensive directory of skincare ingredients to check their safety ratings.">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C12 22 20 18 20 12V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                SafeSkincareUG
+            </a>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ingredients.html" class="active">Ingredients Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title" style="margin-bottom: 1rem;">Ingredients Database</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 2rem;">Filter by category to explore the safety profiles of common skincare ingredients found in Uganda.</p>
+
+        <div class="search-container" style="text-align: center; margin-bottom: 3rem;">
+            <input type="text" id="searchInput" placeholder="Search ingredients (e.g. Aloe Vera, Turmeric)..." style="width: 100%; max-width: 500px; padding: 1rem; border: 1px solid #e1e4e8; border-radius: 30px; font-size: 1rem; outline: none; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+        </div>
+
+        <div class="filter-container">
+            <!-- CSS-only filter radio buttons -->
+            <input type="radio" name="filter" id="filter-all" class="filter-radio" checked>
+            <input type="radio" name="filter" id="filter-moisturiser" class="filter-radio">
+            <input type="radio" name="filter" id="filter-herbal" class="filter-radio">
+            <input type="radio" name="filter" id="filter-oil" class="filter-radio">
+            <input type="radio" name="filter" id="filter-fruit" class="filter-radio">
+            <input type="radio" name="filter" id="filter-chemical" class="filter-radio">
+            <input type="radio" name="filter" id="filter-vitamin" class="filter-radio">
+            <input type="radio" name="filter" id="filter-cleanser" class="filter-radio">
+            <input type="radio" name="filter" id="filter-humectant" class="filter-radio">
+            <input type="radio" name="filter" id="filter-animal" class="filter-radio">
+
+            <div class="filters">
+                <label for="filter-all" class="filter-btn">All</label>
+                <label for="filter-moisturiser" class="filter-btn">Moisturiser</label>
+                <label for="filter-herbal" class="filter-btn">Herbal</label>
+                <label for="filter-oil" class="filter-btn">Oil</label>
+                <label for="filter-fruit" class="filter-btn">Fruit</label>
+                <label for="filter-chemical" class="filter-btn">Chemical</label>
+                <label for="filter-vitamin" class="filter-btn">Vitamin</label>
+                <label for="filter-cleanser" class="filter-btn">Cleanser</label>
+                <label for="filter-humectant" class="filter-btn">Humectant</label>
+                <label for="filter-animal" class="filter-btn">Animal</label>
+            </div>
+
+            <!-- Ingredients Grid -->
+            <div class="ingredients-grid" style="margin-top: 3rem; text-align: left;">
+                
+                <!-- 1. Shea Butter -->
+                <a href="details.html" class="ingredient-card cat-moisturiser cat-oil">
+                    <span class="badge bg-safe">Safe</span>
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=500&q=80" alt="Shea Butter" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Shea Butter</h3>
+                        <p class="card-subtitle">Muzigo gw'ebititi</p>
+                        <span class="category-tag">Moisturiser / Oil</span>
+                    </div>
+                </a>
+
+                <!-- 2. Aloe Vera -->
+                <a href="details.html" class="ingredient-card cat-herbal cat-humectant">
+                    <span class="badge bg-safe">Safe</span>
+                    <img src="images/aloe_vera.png" alt="Aloe Vera" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Aloe Vera</h3>
+                        <p class="card-subtitle">Kigaji</p>
+                        <span class="category-tag">Herbal / Humectant</span>
+                    </div>
+                </a>
+
+                <!-- 3. Avocado Oil -->
+                <a href="details.html" class="ingredient-card cat-oil cat-fruit">
+                    <span class="badge bg-safe">Safe</span>
+                    <img src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?auto=format&fit=crop&w=500&q=80" alt="Avocado Oil" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Avocado Oil</h3>
+                        <p class="card-subtitle">Butto wa Avoka</p>
+                        <span class="category-tag">Oil / Fruit</span>
+                    </div>
+                </a>
+
+                <!-- 4. Lemon Juice -->
+                <a href="details.html" class="ingredient-card cat-fruit cat-chemical">
+                    <span class="badge bg-caution">Use with Caution</span>
+                    <img src="https://images.unsplash.com/photo-1582979512210-99b6a53386f9?auto=format&fit=crop&w=500&q=80" alt="Lemon Juice" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Lemon Juice</h3>
+                        <p class="card-subtitle">Enniimu</p>
+                        <span class="category-tag">Fruit / Chemical</span>
+                    </div>
+                </a>
+
+                <!-- 5. Hydroquinone -->
+                <a href="details.html" class="ingredient-card cat-chemical">
+                    <span class="badge bg-avoid">Avoid</span>
+                    <img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?auto=format&fit=crop&w=500&q=80" alt="Hydroquinone" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Hydroquinone</h3>
+                        <p class="card-subtitle">Kola-bbala</p>
+                        <span class="category-tag">Chemical</span>
+                    </div>
+                </a>
+
+                <!-- 6. Vitamin C -->
+                <a href="details.html" class="ingredient-card cat-vitamin">
+                    <span class="badge bg-safe">Safe</span>
+                    <img src="images/vitamin_c.png" alt="Vitamin C" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Vitamin C</h3>
+                        <p class="card-subtitle">Vitayimini C</p>
+                        <span class="category-tag">Vitamin</span>
+                    </div>
+                </a>
+
+                <!-- 7. Tea Tree Oil -->
+                <a href="details.html" class="ingredient-card cat-oil cat-herbal">
+                    <span class="badge bg-caution">Use with Caution</span>
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=500&q=80" alt="Tea Tree Oil" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Tea Tree Oil</h3>
+                        <p class="card-subtitle">Katungulu/Butto w'omuti</p>
+                        <span class="category-tag">Oil / Herbal</span>
+                    </div>
+                </a>
+
+                <!-- 8. Honey -->
+                <a href="details.html" class="ingredient-card cat-humectant">
+                    <span class="badge bg-safe">Safe</span>
+                    <img src="images/honey.png" alt="Honey" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Honey</h3>
+                        <p class="card-subtitle">Omubisi gw'enjuki</p>
+                        <span class="category-tag">Humectant</span>
+                    </div>
+                </a>
+
+                <!-- 9. Coconut Oil -->
+                <a href="details.html" class="ingredient-card cat-oil cat-moisturiser">
+                    <span class="badge bg-caution">Use with Caution</span>
+                    <img src="images/coconut_oil.png" alt="Coconut Oil" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Coconut Oil</h3>
+                        <p class="card-subtitle">Butto w'ekinazi</p>
+                        <span class="category-tag">Oil / Moisturiser</span>
+                    </div>
+                </a>
+
+                <!-- 10. Tretinoin/Retinol -->
+                <a href="details.html" class="ingredient-card cat-vitamin cat-chemical">
+                    <span class="badge bg-caution">Use with Caution</span>
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=500&q=80" alt="Retinol" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Tretinoin / Retinol</h3>
+                        <p class="card-subtitle">Vitayimini A</p>
+                        <span class="category-tag">Vitamin / Chemical</span>
+                    </div>
+                </a>
+
+                <!-- 11. Salicylic Acid -->
+                <a href="details.html" class="ingredient-card cat-chemical cat-cleanser">
+                    <span class="badge bg-safe">Safe</span>
+                    <img src="images/salicylic_acid.png" alt="Salicylic Acid" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Salicylic Acid</h3>
+                        <p class="card-subtitle">Asidi wa Salisiliki</p>
+                        <span class="category-tag">Chemical / Cleanser</span>
+                    </div>
+                </a>
+
+                <!-- 12. Snail Mucin -->
+                <a href="details.html" class="ingredient-card cat-animal cat-humectant">
+                    <span class="badge bg-safe">Safe</span>
+                    <img src="https://images.unsplash.com/photo-1534080517865-1d01f1bd9a62?auto=format&fit=crop&w=500&q=80" alt="Snail Mucin" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Snail Mucin</h3>
+                        <p class="card-subtitle">Abaami b'amasununu</p>
+                        <span class="category-tag">Animal / Humectant</span>
+                    </div>
+                </a>
+
+                <!-- 13. Mercury -->
+                <a href="details.html" class="ingredient-card cat-chemical">
+                    <span class="badge bg-avoid">Avoid</span>
+                    <img src="https://images.unsplash.com/photo-1579165462846-f56f1cc03328?auto=format&fit=crop&w=500&q=80" alt="Mercury" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Mercury</h3>
+                        <p class="card-subtitle">Simu/Mekyure</p>
+                        <span class="category-tag">Chemical</span>
+                    </div>
+                </a>
+
+                <!-- 14. Glycerin -->
+                <a href="details.html" class="ingredient-card cat-humectant cat-moisturiser">
+                    <span class="badge bg-safe">Safe</span>
+                    <img src="https://images.unsplash.com/photo-1608285511394-1b1d9df5e970?auto=format&fit=crop&w=500&q=80" alt="Glycerin" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Glycerin</h3>
+                        <p class="card-subtitle">Gulayisirini</p>
+                        <span class="category-tag">Humectant / Moisturiser</span>
+                    </div>
+                </a>
+
+                <!-- 15. Turmeric -->
+                <a href="details.html" class="ingredient-card cat-herbal">
+                    <span class="badge bg-safe">Safe</span>
+                    <img src="images/turmeric.png" alt="Turmeric" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Turmeric</h3>
+                        <p class="card-subtitle">Ebizigo by'ekinzaali</p>
+                        <span class="category-tag">Herbal</span>
+                    </div>
+                </a>
+
+                <!-- 16. Sodium Lauryl Sulfate -->
+                <a href="details.html" class="ingredient-card cat-cleanser">
+                    <span class="badge bg-caution">Use with Caution</span>
+                    <img src="https://images.unsplash.com/photo-1584824388151-50e8f00db842?auto=format&fit=crop&w=500&q=80" alt="SLS Soap" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Sodium Lauryl Sulfate (SLS)</h3>
+                        <p class="card-subtitle">Sopo wa SLS</p>
+                        <span class="category-tag">Cleanser</span>
+                    </div>
+                </a>
+
+                <!-- 17. Steroids/Clobetasol -->
+                <a href="details.html" class="ingredient-card cat-chemical">
+                    <span class="badge bg-avoid">Avoid</span>
+                    <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=500&q=80" alt="Steroids" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Steroids / Clobetasol</h3>
+                        <p class="card-subtitle">Siterojidi</p>
+                        <span class="category-tag">Chemical</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SafeSkincareUG. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Empowering Ugandans with skincare knowledge.</p>
+    </footer>
+
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('.ingredient-card');
+            cards.forEach(card => {
+                const title = card.querySelector('.card-title').textContent.toLowerCase();
+                const subtitle = card.querySelector('.card-subtitle').textContent.toLowerCase();
+                if (title.includes(query) || subtitle.includes(query)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
 
