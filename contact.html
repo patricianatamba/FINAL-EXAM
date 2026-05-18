@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SafeSkincareUG</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Contact SafeSkincareUG to suggest ingredients, report issues, or ask skincare questions.">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C12 22 20 18 20 12V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                SafeSkincareUG
+            </a>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ingredients.html">Ingredients Directory</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title">Get in Touch</h1>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>We'd love to hear from you</h2>
+                <p>Have a question about an ingredient not listed? Want to report a dangerous product on the market?</p>
+                <p style="margin-top: 1.5rem; font-weight: 600;">📍 Kampala, Uganda</p>
+                <p>📧 hello@safeskincare.ug</p>
+            </div>
+
+            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for reaching out! This is a demo form, so no message was actually sent.');">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="What is this regarding?">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn submit-btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SafeSkincareUG. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Empowering Ugandans with skincare knowledge.</p>
+    </footer>
+</body>
+</html>
 
